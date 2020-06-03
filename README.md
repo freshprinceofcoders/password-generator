@@ -1,2 +1,2 @@
 # password-generator
-This generates a password that is above 6 characters long and will end if it is less than 6 characters
+This is a password generator where it will ask you how many numbers or letters you want in your password and you will have to include one symbol in it and you can't have less than 6 characters
