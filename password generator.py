@@ -31,13 +31,13 @@ let = int(nums)
 if (nums) > (lens):
     print("Make sure it sums up you twat")
     exit()
-    
+
 if (let) > (lens):
     print("Make sure it sums up you twat")
     exit()
 
 
-if (nums)+(let)> lens-1:
+if (nums)+(let)> (lens)-1:
     print("please make sure it sums up")
     exit()
 
@@ -52,13 +52,13 @@ for pwd in range(num):
   
     
 
-    for l in range(let):
-        password += random.choice(chars)
+for l in range(let):
+    password += random.choice(chars)
     
-    for i in range(nums):
-          password += random.choice(numbers)
+for i in range(nums):
+    password += random.choice(numbers)
 
-    for c in range(lens-(let+nums)):
-        password += random.choice(sym)
+for c in range(lens-(let+nums)):
+    password += random.choice(sym)
     
-    print(password)
+print(password)
