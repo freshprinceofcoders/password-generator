@@ -12,19 +12,18 @@ sym = "!£$%^&*()_+-=<>.,/?@;:"# defing symbols to variable
 
  
 lens = input("Enter lenght of password?") # This is so the user can input the number
-lens = int(lens)# This shows the number has to be a int 
+lens = int(lens)# This shows the number has to be a int casting parsing converting
 
 if (lens) < 6: # if it is less than 6 characters then the code will exit and you will have to restart
     print("Use common sense it has to be longer than 6 character")
     exit()
 
 
-
 let = input("Enter how many letters you want in your password?")
 let = int(let)
 
 if (let) > (lens):
-    print("Make sure it sums up you twat")
+    print("Make sure count of letters is less than the of the password")
     exit()
 
 
@@ -32,25 +31,19 @@ nums = input("Enter how many numbers you want in your password?")
 nums = int(nums)
 
 if (nums) > (lens):
-    print("Make sure it sums up you twat")
+    print("Make sure count of numbers is less than the of the password")
     exit()
 
 
 if (nums)+(let)>lens-1:
-    print("please make sure it sums up")
+    print("please make sure it sums up to one less than lenght of password")
     exit()
    
-
-
-
 
 print("\nYour passwords are here:")    
 
 
-for pwd in range(nums):
-    password = ''
-  
-    
+password = ''  
 
 for l in range(let):
     password += random.choice(chars)
@@ -62,3 +55,4 @@ for c in range(lens-(let+nums)):
     password += random.choice(sym)
     
 print(password)
+
